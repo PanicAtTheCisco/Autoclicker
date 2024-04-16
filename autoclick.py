@@ -3,9 +3,11 @@ from pynput.mouse import Button, Controller
 import time
 import threading
 
+# Change these values to customize the autoclicker
+rate = 0.001        # The rate at which the autoclicker clicks in seconds
+toggleKey = 'q'     # The key that toggles the autoclicker
+
 clicking = False
-rate = 0.001
-toggleKey = 'q'
 
 def toggle_autoclicker():
     global clicking
